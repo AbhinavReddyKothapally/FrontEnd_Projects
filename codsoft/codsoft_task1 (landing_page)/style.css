@@ -1,0 +1,148 @@
+* {
+    padding: 0%;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #8ec26c 70%, #c2e6aa 30%);
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;  
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #433c2e;
+    position: relative;
+    z-index: 1;
+}
+nav ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #bfe7a4;
+    z-index: -1;
+    transition: 0.5s;
+}
+nav ul a:hover:after{
+    width: 100%;
+}
+.main {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pista ,.main-text{
+    flex-basis: 50%;
+}
+.pista img{
+    width: 100%;
+}
+.main h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #463e2f;
+}
+.main p{
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.main button{
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color: #433c2e;
+    color: rgb(242, 238, 238);
+    cursor: pointer;
+}
+.rightside{
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.rightside .box .smallimage img{
+    width: 70%;
+}
+.smallimage{
+    margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(4, 4, 4, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.smallimage:hover{
+    background-color: rgba(73,66,52,0.7);
+}
+.box .smallbox{
+    margin: 1.5rem 0 0 1rem;
+}
+.box .smallbox p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.socialmedia{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.socialmedia::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top:42%;
+    left: -150px;
+    background-color: #494234;
+}
+.socialmedia i{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #8bbe69;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.socialmedia i:hover{
+    background-color: rgba(70, 62, 47, 0.7);
+}
